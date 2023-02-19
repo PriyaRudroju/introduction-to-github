@@ -3,7 +3,8 @@ title: "Class & Subclasses"
 date: 2023-02-18
 ---
 
-Class
+Class:
+
 A class is a template or a blueprint
 
 Syntax: 
