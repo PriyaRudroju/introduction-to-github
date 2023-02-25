@@ -73,3 +73,43 @@ Why do we have optionals in swift?
 
 Swift is a type-safe language, requiring programmers to be extremely precise when specifying the data type of variables and constants. As a result, Swift enforces strict rules around data types, ensuring that the correct type is used for each variable or constant.
 
+Properties:
+ 
+Properties are just like variables that are at the class level, they are declared at the class level, they are accessible and usable by any of the functions inside that class.
+
+Based on the previous example, the dowork method of the employee class can access the salary property because as declared, if we had more methods in this class inside each, we would be able to access the salary.
+
+For example, 
+
+    class Manager: Employee {
+
+      var teamSize = 0
+      var bonus:Int {
+    // This is a computed property
+    //When it's accessed, the code in here will run
+    //Then we'll return the value
+
+    return teamSize = 1000
+    }
+
+    init(_name:String, _team:Int) {
+    // This calls the init of the Employee class
+     super.init(name)
+    }
+    let a = Manager("priya", 11)
+    print(m.bonus)
+
+Output:
+
+    11000
+
+Challenges:
+
+While declaring properties, I have to choose a unique name if not it gonna clash with other names used in the same scope. I used multiple properties that have the same name, and then it lead to conflicts.
+When using Swift, it can be challenging to work with variables or constants that are declared without initially assigning them a value, resulting in a "nil" value. This is due to the language's strict rules around data typing, requiring precise and accurate declarations of variables and constants.
+
+References : 
+
+    https://www.codecademy.com/learn/learn-swift
+    https://www.youtube.com/watch?v=kDWDTg_RpLA
+    https://www.programiz.com/swift-programming
