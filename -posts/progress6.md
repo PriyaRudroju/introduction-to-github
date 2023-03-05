@@ -88,7 +88,9 @@ For example,
 
     let a = Person()    //Creating a new person object
 
+Challenges faced:
 
+No, my post does not demonstrate a challenge that I faced and how I addressed it or plan to address it next week. Instead, it provides examples and explanations of initializer methods, including designated and convenience initializers, and how they can be used to ensure proper object initialization and configuration.
 
 
 
