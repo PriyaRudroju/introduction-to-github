@@ -53,9 +53,11 @@ Output :
     None
    
 Designated Initializer:
+
 A designated initializer is responsible for ensuring that an object is prepared for use and that all of its properties are properly initialized. By using a designated initializer method, you can be confident that the object will be returned and ready for use, with all its properties initialized.
 
 Convenience Initializer:
+
 A convenience initializer is a type of initialization method that is used to pre-configure an object in a specific manner. These types of initializers may depend on a designated initializer to ensure that the object is properly configured and ready to be used.
 
 For example, 
