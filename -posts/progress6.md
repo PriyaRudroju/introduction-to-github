@@ -1,5 +1,5 @@
 ---
-title: "Designated Initializer & Convenience initializer"
+title: "Designated Initializer, Convenience initializer & Arrays"
 date: 2023-03-04
 ---
 Revisit initializer methods and designated versus convenience initializer
@@ -161,10 +161,15 @@ Output :
     pig
     Frog
 
-Challenges faced: 
+Challenges : 
 
 In terms of challenges I have faced while working with arrays, array indexes start at 0, which can sometimes lead to off-by-one errors. Another potential challenge is working with multidimensional arrays, which can require nested loops to access and manipulate elements.
 
+References : 
+
+    https://www.codecademy.com/learn/learn-swift
+    https://www.youtube.com/watch?v=kDWDTg_RpLA
+    https://www.programiz.com/swift-programming
 
 
 
