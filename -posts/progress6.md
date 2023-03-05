@@ -1,4 +1,6 @@
 ---
-title: "Overriding, Optional data type & Properties"
-date: 2023-02-25
+title: "Designated Initializer & Convenience initializer"
+date: 2023-03-04
 ---
+
+
