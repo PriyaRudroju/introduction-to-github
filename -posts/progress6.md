@@ -51,6 +51,56 @@ For example, If one of the properties is not initialized.
 Output :
 
     None
+   
+Designated Initializer:
+A designated initializer is responsible for ensuring that an object is prepared for use and that all of its properties are properly initialized. By using a designated initializer method, you can be confident that the object will be returned and ready for use, with all its properties initialized.
+
+Convenience Initializer:
+A convenience initializer is a type of initialization method that is used to pre-configure an object in a specific manner. These types of initializers may depend on a designated initializer to ensure that the object is properly configured and ready to be used.
+
+For example, 
+
+    class Person {
+
+      var name:String
+      var netWorth:Int?   
+      var gender:String!
+    // Designated initializer because it makes sure that all properties are initialized
+
+    init() {
+       name = "None"
+    }
+
+    convenience init(_gender:String, _netWorth) {
+    //Call the designated initializer to ensure that the object is ready to go 
+
+       init()
+
+    //Set any other properties or custom code to initialize for this scenario
+
+       self.gender = gender
+       self.netWorth = netWorth
+    }
+
+    }
+
+    let a = Person()    //Creating a new person object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
