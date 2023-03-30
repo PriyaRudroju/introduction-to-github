@@ -28,11 +28,25 @@ for example,
     var coin: Coin?
     public weak var delegate: CoinTossDelegate?
     
-Viewcontroller.swift: 
+Viewcontroller.swift: This module contains the view controller, which is responsible for managing the app's user interface. It will communicate with the model classes and update the view based on the state of the model. 
 
-    tossCounter = TossCounter()
+For example, 
+
+     tossCounter = TossCounter()
         coinToss = CoinToss()
         coinToss?.delegate = self
+    }
+
+    @IBAction func onButtonClick(_ sender: Any) {
+        tossCounter?.increment()
+        tossCount.text = "Toss Count: \(tossCounter?.count ?? 0)"
+        coinToss?.tossCoin()
+    }
+
+    @IBAction func refreshCount(_ sender: Any) {
+        tossCounter?.count = 0
+        tossCount.text = "Toss Count: \(tossCounter?.count ?? 0)"
+    }
     }
 
 The concept of state handling/managing to keep track of the number of coin tosses when the user clicks the button("Flip coin"). 
